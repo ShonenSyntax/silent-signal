@@ -1,9 +1,13 @@
+import os
+from dotenv import load_dotenv
 import google.generativeai as genai
 
-#Will set this key later
-genai.configure(api_key="API_KEY_HERE")
+load_dotenv() #reads .env
 
-model = genai.GenerativeModel("gemini-1.5-flash")
+# Read API key from environment variable
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+
+model = genai.GenerativeModel("models/gemini-flash-latest")
 
 def analyze_report(report_text):
     prompt = f"""

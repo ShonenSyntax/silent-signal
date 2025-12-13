@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, jsonify, redirect, url_for
+from ai_utils import analyze_report
 
 app = Flask(__name__)
 
@@ -10,7 +11,14 @@ def home():
 @app.route("/submit", methods=["POST"])
 def submit():
     report_text = request.form.get("report")
-    print(report_text)  #temporary, for learning
+
+    analysis = analyze_report(report_text)
+
+    print("RAW REPORT: ")
+    print(report_text)
+
+    print("\nAI ANALYSIS: ")
+    print(analysis)
 
     return redirect(url_for("home", submitted="true"))
 
