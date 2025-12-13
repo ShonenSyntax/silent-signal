@@ -6,6 +6,9 @@
     <body>
         <h1>Silent Signal</h1>
         <p>Anonymous campus issue reporting</p>
+        {% if submitted %}
+            <p><strong>Your report was submitted anonymously</strong></p>
+        {% endif %}
 
         <form method="POST" action="/submit">
             <textarea name="report" placeholder="Describe the issue anonymously..." rows="6" columns="50"></textarea>
