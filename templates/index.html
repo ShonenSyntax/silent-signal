@@ -2,18 +2,35 @@
 <html>
     <head>
         <title>Silent Signal</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
-        <h1>Silent Signal</h1>
-        <p>Anonymous campus issue reporting</p>
+    <div class="container">
+
+        <h1 class="title">Silent Signal</h1>
+        <p class="subtitle">Anonymous campus issue reporting</p>
+
         {% if submitted %}
-            <p><strong>Your report was submitted anonymously</strong></p>
+            <p class="success-message">
+                Your report was submitted anonymously
+            </p>
         {% endif %}
 
-        <form method="POST" action="/submit">
-            <textarea name="report" placeholder="Describe the issue anonymously..." rows="6" columns="50"></textarea>
-            <br><br>
-            <button type="submit">Submit</button>
+        <form class="report-form" method="POST" action="/submit">
+            <textarea 
+                class="report-textarea"
+                name="report"
+                placeholder="Describe the issue anonymously..."
+                rows="6">
+            </textarea>
+
+            <button class="submit-btn" type="submit">
+                Submit
+            </button>
         </form>
+
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
     </body>
+
 </html>
