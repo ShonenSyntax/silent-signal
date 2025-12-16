@@ -16,8 +16,9 @@
             </p>
         {% endif %}
 
-        <form class="report-form" method="POST" action="/submit">
+        <form class="report-form" method="POST" action="/submit" id="reportForm" >
             <textarea 
+                id="reportInput"
                 class="report-textarea"
                 name="report"
                 placeholder="Describe the issue anonymously..."
