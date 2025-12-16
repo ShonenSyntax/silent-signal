@@ -34,3 +34,25 @@ def analyze_report(report_text):
 
     response = model.generate_content(prompt)
     return response.text
+    
+def parse_analysis(response):
+    lines = response.split("\n")
+
+    result = {
+        "summary": "",
+        "category": "",
+        "severity": 0
+    }
+
+    for line in lines:
+        if line.startswith("Summary:"):
+            result["summary"] = line.replace("Summary: ", "").strip()
+        elif line.startswith("Category: "):
+            result["category"] = line.replace("Category: ", "").strip()
+        elif line.startswith("Severity:"):
+            try:
+                result["severity"] = int(line.replace("Severity: ", "").strip())
+            except:
+                result["severity"] = 0
+    
+    return result

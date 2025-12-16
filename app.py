@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, jsonify, redirect, url_for
-from ai_utils import analyze_report
+from ai_utils import analyze_report, parse_analysis
+from db import db
+from datetime import datetime
 
 app = Flask(__name__)
 
@@ -12,13 +14,21 @@ def home():
 def submit():
     report_text = request.form.get("report")
 
-    analysis = analyze_report(report_text)
+    #Ai Analysis
+    analysis_text = analyze_report(report_text)
+    parsed = parse_analysis(analysis_text)
 
-    print("\nRAW REPORT: ")
-    print(report_text)
+    #Firestore Document
+    report_data = {
+        "report_text": report_text,
+        "summary": parsed["summary"],
+        "category": parsed["category"],
+        "severity": parsed["severity"],
+        "timestamp": datetime.utcnow()
+    }
 
-    print("\nAI ANALYSIS: ")
-    print(analysis)
+    #Save to Firestore
+    db.collection("reports").add(report_data)
 
     return redirect(url_for("home", submitted="true"))
 
