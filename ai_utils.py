@@ -20,6 +20,7 @@ def analyze_report(report_text):
         - Safety
         - Infrastructure
         - Academic
+        - Management
         - Other
     3. Assign a severity level from 1(low) to 5(critical).
 

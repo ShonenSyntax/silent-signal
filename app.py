@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, jsonify, redirect, url_for
 from ai_utils import analyze_report, parse_analysis
 from db import db
 from datetime import datetime
+from db_utils import get_all_reports
 
 app = Flask(__name__)
 
@@ -31,6 +32,11 @@ def submit():
     db.collection("reports").add(report_data)
 
     return redirect(url_for("home", submitted="true"))
+
+@app.route("/admin")
+def admin():
+    reports = get_all_reports()
+    return render_template("admin.html", reports = reports)
 
 if __name__ == "__main__":
     app.run(debug=True)

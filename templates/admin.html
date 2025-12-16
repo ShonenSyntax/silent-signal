@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Silent Signal - Admin</title>
+    </head>
+    <body>
+        <h1>Reported Issues</h1>
+
+        {% for report in reports %}
+        <hr>
+        <p><strong>Summary:</strong> {{ report.summary }}</p>
+        <p><strong>Category:</strong> {{ report.category }}</p>
+        <p><strong>Severity:</strong> {{ report.severity }}</p>
+        <p><strong>Original Report:</strong> {{ report.report_text }}</p>
+        <p><em>{{ report.timestamp }}</em></p>
+        {% endfor %}
+    </body>
+</html>
