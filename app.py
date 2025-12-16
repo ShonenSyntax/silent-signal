@@ -14,7 +14,7 @@ def submit():
 
     analysis = analyze_report(report_text)
 
-    print("RAW REPORT: ")
+    print("\nRAW REPORT: ")
     print(report_text)
 
     print("\nAI ANALYSIS: ")

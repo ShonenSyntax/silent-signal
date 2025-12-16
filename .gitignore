@@ -15,3 +15,6 @@ Thumbs.db
 #Workspace
 .vscode/
 *.code-workspace
+
+#firebase_key
+firebase_key.json
