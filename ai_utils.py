@@ -16,13 +16,22 @@ def analyze_report(report_text):
     Task:
     1. Summarize the issue in one sentence.
     2. Classify it into one category:
-        - Harassement
+        - Harassment
         - Safety
         - Infrastructure
         - Academic
         - Management
         - Other
     3. Assign a severity level from 1(low) to 5(critical).
+       Severity scale (campus context):
+        - 1 Minor inconvenience, no harm, no urgency  
+        - 2 Repeated inconvenience or discomfort  
+        - 3 Emotional distress, harassment, or moderate disruption  
+        - 4 Serious harassment, discrimination, or safety risk  
+        - 5 Immediate danger, abuse, or severe safety threat
+        Severity should be based on human impact, urgency for administration,
+        and potential long-term effects, not just physical dange.
+
 
     Report:
     {report_text}
