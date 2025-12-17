@@ -138,7 +138,20 @@ Visit:
 
 👉 http://127.0.0.1:5000 for Regular Access
 
-👉 http://127.0.0.1:5000/admin for Admin Access
+👉 http://127.0.0.1:5000/admin for Admin Access (local development)
+
+## 🚀 Live Demo
+👉 https://silent-signal-czjy.onrender.com for Regular Access
+
+🔒 Admin panel available (restricted access)
+
+> ⚠️ Note: The app may take ~30 seconds to load on first visit due to free-tier cold starts.
+
+## 🧑‍⚖️ Judge / Admin Access
+
+An admin dashboard is available for moderation and issue management.
+
+URL: https://silent-signal-czjy.onrender.com/admin
 
 ## 🌱 Future Enhancements
 
