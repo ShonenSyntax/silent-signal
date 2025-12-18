@@ -51,14 +51,29 @@ This hesitation is often caused by fear of retaliation, social pressure and lack
 User Browser
    │
    ▼
-Frontend (HTML / CSS / JavaScript)
-   │
+Frontend (HTML / CSS / JavaScript)   |-------------------------------------------|
+   |                                 | Handles anonymous user input and displays |
+   |                                 | submission feedback via a simple web      |
+   |                                 | interface                                 |
+   |                                 |-------------------------------------------|
    ▼
-Flask Backend (Python)
-   │
-   ├── Gemini API (AI Analysis)
-   │
-   └── Firebase Firestore (Data Storage)
+Flask Backend (Python)  |---------------------------------------------------|
+   |                    | Acts as the central controller, handling requests,| 
+   |                    | routing data, and coordinating   between AI and   | 
+   |                    | database services                                 |
+   |                    |---------------------------------------------------|
+   |
+   ├── Gemini API (AI Analysis)  |---------------------------------------------------|
+   |                             | Processes raw text reports to generate summaries, |
+   |                             | categories, and severity scores using AI          |
+   |                             |---------------------------------------------------|
+   | 
+   └── Firebase Firestore (Google Cloud)  |---------------------------------------------------|
+                                          | Acts as the central controller, handling requests,| 
+                                          | routing data, and coordinating   between AI and   | 
+                                          | database services                                 |
+                                          |---------------------------------------------------|
+
 ```
 
 ## 🔧 Tech Stack
@@ -170,32 +185,3 @@ This project was built as part of Google TechSprint – GDG Chandigarh Universit
 - Ethical AI usage
 
 - Real-world campus impact
-
-```python
-User Browser
-   │
-   ▼
-Frontend (HTML / CSS / JavaScript)   |-------------------------------------------|
-   |                                 | Handles anonymous user input and displays |
-   |                                 | submission feedback via a simple web      |
-   |                                 | interface                                 |
-   |                                 |-------------------------------------------|
-   ▼
-Flask Backend (Python)  |---------------------------------------------------|
-   |                    | Acts as the central controller, handling requests,| 
-   |                    | routing data, and coordinating   between AI and   | 
-   |                    | database services                                 |
-   |                    |---------------------------------------------------|
-   |
-   ├── Gemini API (AI Analysis)  |---------------------------------------------------|
-   |                             | Processes raw text reports to generate summaries, |
-   |                             | categories, and severity scores using AI          |
-   |                             |---------------------------------------------------|
-   | 
-   └── Firebase Firestore (Google Cloud)  |---------------------------------------------------|
-                                          | Acts as the central controller, handling requests,| 
-                                          | routing data, and coordinating   between AI and   | 
-                                          | database services                                 |
-                                          |---------------------------------------------------|
-
-```
