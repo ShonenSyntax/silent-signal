@@ -170,3 +170,25 @@ This project was built as part of Google TechSprint – GDG Chandigarh Universit
 - Ethical AI usage
 
 - Real-world campus impact
+
+```python
+
+[ Student / User ]
+        │
+        ▼
+[ Anonymous Web Form ]
+        │
+        ▼
+[ Flask Backend ]
+        │
+        ├──► [ Gemini API ]
+        │        (Summarize, Classify, Score Severity)
+        │
+        ▼
+[ Firebase Firestore ]
+        │
+        ▼
+[ Admin Dashboard ]
+ (Insights, Categories, Severity Trends)
+
+```
