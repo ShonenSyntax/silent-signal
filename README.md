@@ -13,11 +13,7 @@ Silent Signal is a privacy-first web application that enables students to report
 - Infrastructure problems
 - Academic grievances
 
-**This hesitation is often caused by:**
-
-- Fear of retaliation
-- Social pressure
-- Lack of trust in traditional reporting systems
+This hesitation is often caused by fear of retaliation, social pressure and lack in traditional reportin systems.
 
 ### As a result, critical issues remain underreported and unresolved.
 
