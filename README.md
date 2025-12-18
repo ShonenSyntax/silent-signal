@@ -174,15 +174,12 @@ This project was built as part of Google TechSprint – GDG Chandigarh Universit
 ```python
 User Browser
    │
-   |
    ▼
 Frontend (HTML / CSS / JavaScript)   |-------------------------------------------|
    |                                 | Handles anonymous user input and displays |
    |                                 | submission feedback via a simple web      |
    |                                 | interface                                 |
    |                                 |-------------------------------------------|
-   |
-   |
    ▼
 Flask Backend (Python)  |---------------------------------------------------|
    |                    | Acts as the central controller, handling requests,| 
@@ -190,15 +187,11 @@ Flask Backend (Python)  |---------------------------------------------------|
    |                    | database services                                 |
    |                    |---------------------------------------------------|
    |
-   |
-   |
    ├── Gemini API (AI Analysis)  |---------------------------------------------------|
    |                             | Processes raw text reports to generate summaries, |
    |                             | categories, and severity scores using AI          |
    |                             |---------------------------------------------------|
    | 
-   │
-   |
    └── Firebase Firestore (Google Cloud)  |---------------------------------------------------|
                                           | Acts as the central controller, handling requests,| 
                                           | routing data, and coordinating   between AI and   | 
