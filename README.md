@@ -4,7 +4,7 @@
       <h1>📢Silent Signal</h1>
     </td>
     <td width="30%" align="center" valign="middle">
-      <img src="images/logo_ss.jpg" width="90" alt="Silent Signal Logo">
+      <img src="images/logo_ss.jpg" width="180" alt="Silent Signal Logo">
     </td>
   </tr>
 </table>
