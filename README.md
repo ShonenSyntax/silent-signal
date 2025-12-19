@@ -1,4 +1,13 @@
-# 📢 Silent Signal
+<table width="100%">
+  <tr>
+    <td width="70%" valign="middle">
+      <h1>📢Silent Signal</h1>
+    </td>
+    <td width="30%" align="center" valign="middle">
+      <img src="images/logo_ss.jpg" width="90" alt="Silent Signal Logo">
+    </td>
+  </tr>
+</table>
 
 **Anonymous AI-Powered Campus Issue Reporting Platform**
 
