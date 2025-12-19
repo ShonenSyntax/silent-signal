@@ -117,6 +117,26 @@ Prioritize issues based on severity
 
 > ⚠️ Note: The admin dashboard is intentionally kept separate from user submission flow to preserve anonymity.
 
+## 📷Snapshots of Working MVP
+
+<p align="center">
+  <img src="images/complain_ss.jpg" width="600" alt="Anonymous Complaint Submission Page">
+  <br><b>Issue Submission</b>
+</p>
+<br>
+<table>
+  <tr>
+    <td align="center">
+      <img src="images/report_ss.jpg" width="350" alt="AI Analyzed Report View">
+      <br><b>Report Analysis</b>
+    </td>
+    <td align="center">
+      <img src="images/firebase_ss.jpg" width="450" alt="Firestore Database Snapshot">
+      <br><b>Firestore Database Structure</b>
+    </td>
+  </tr>
+</table>
+
 ## 🛡️ Privacy & Ethics
 
 **Silent Signal is designed with privacy as the core principle:**
